@@ -1,0 +1,39 @@
+
+import tkinter                    #fetches gui functions
+m = tkinter.Tk()
+from tkinter import *
+from datetime import datetime     #datetime module fetches date and time
+from datetime import timedelta    #timedelta module fetches date/time arithmetic functions
+
+now = datetime.now()
+current_date=datetime.date(datetime.now())
+
+start_date = (datetime.now() + timedelta(days=1))  #adds 1 day to current day
+print("Start date is",start_date)
+
+
+
+from tkinter import *
+master = Tk()
+Label(master, text='Client Name').grid(row=0)
+Label(master, text='Order Name').grid(row=1)
+Label(master, text='Order Amount').grid(row=2)
+Label(master, text='Order Deadline').grid(row=3)
+
+
+e1 = Entry(master)
+e2 = Entry(master)
+e3 = Entry(master)
+e4 = Entry(master)
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+e3.grid(row=2, column=1)
+e4.grid(row=3, column=1)
+mainloop()
+import tkinter as tk
+r = tk.Tk()
+r.title('Economic Predictor Ver1.00')
+button = tk.Button(r, text='Exit', width=25, command=r.destroy)
+button.pack()
+r.mainloop()
+m.mainloop()
