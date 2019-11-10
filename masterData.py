@@ -2,7 +2,7 @@
 Master file contains all data about the company
 such as the worker numbers, working days, working hours
 and all other data relevant to calculations that are being performed
-Can be accessed and tweaked by authorised personnel
+Can be accessed and tweaked by authorised personnel.
 """
 import projectclasses
 workForce = 50
