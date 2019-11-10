@@ -8,7 +8,7 @@
 # need real time rate calculator function for each day
 
 # we have:
-# - from class product; time to build one specific product unit; we have product name; dictionaary;
+# - from class product; time to build one specific product unit; we have product name; dictionaary;.
 
 # create a function which takes in the current date and the specified deadline; outputs total weekdays available;
 def weekdays(currentDate, deadline):
