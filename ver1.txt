@@ -1,4 +1,4 @@
-
+#Please ignore these files, these were created initially as we were experimenting with possibilities
 import tkinter                    #fetches gui functions
 m = tkinter.Tk()
 from tkinter import *
