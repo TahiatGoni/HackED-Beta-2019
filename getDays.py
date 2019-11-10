@@ -52,20 +52,7 @@ def weekdays(currentDate, deadline):
  		weekdays = totalDays - weekends
  		return weekdays
 
-## input daily production in terms of hours koto ghonta kaaj hoise akdine 
-# have total order amount, 
-# inputs : (at the start of the day) the total no. of products left to be built, days remaining
-# take input for # hours worked during the day
-# we know: the numbers of hours required to build each product
-"""
-def finished1Day(remProducts, remDays, prodReq):
-	# Number of hours worked during the day, workers should provide this input
-	n =int(input('How many hours of work were done today? '))
-	# Assume there is global variable named prodReq which represents the specific number of hours necessary to build each product
-	remProducts = remProducts - n/prodReq
-	remDays-=1
-	return remProducts, remDays
-"""
+
 
 if __name__ == '__main__':
 	print(weekdays('2019-12-09', '2020-01-05'))

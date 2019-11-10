@@ -36,7 +36,7 @@ class order:
     def updateAmount(self, produced):
         self.__amount = produced
     def __str__(self):
-        string = "Product: " + str(self.__prodType) + " Order Amount: " + str(self.__amount)
+        string = str(self.__prodType) + "\n Order Amount: " + str(self.__amount)
         return string
 class client:
     """
@@ -48,8 +48,10 @@ class client:
     def addOrder(self, ordername, amount):
         self.__clientOrder.append(order(amount, ordername))
     def showOrders(self):
+        i = 1
         for element in self.__clientOrder:
-            print(str(element))
+            print(i,"-",str(element))
+            i += 1
     def getLen(self):
         return len(self.__clientOrder)
     def pullOrders(self, number):

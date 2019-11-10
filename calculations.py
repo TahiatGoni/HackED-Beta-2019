@@ -7,9 +7,16 @@ import masterData as MD
 import getDays as D
 #________________________________________________________
 def NewOrder(client, product, amount):
+    """
+    creates New order
+    """
     client.addOrder(product, amount)
 
 def finished1Day(totalRequired, remDays):
+    """
+    gets data about daily productivity
+    and performs computations based on the input
+    """
     produce = int(input("How was productivity today? "))
     totalRequired = totalRequired - produce
     remDays -= 1

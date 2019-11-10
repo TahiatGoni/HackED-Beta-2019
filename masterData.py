@@ -13,8 +13,9 @@ producta = projectclasses.product("a", 3)
 #productb, second product made by company takes 2 hours to make per unit
 productb = projectclasses.product("b", 2)
 #productc. second product made by company takes 0.5 hours to make per unit
-productc = projectclasses.product("c", 2)
+productc = projectclasses.product("c", 0.5)
 #___________________________________________________________________________
 
 #Client info: currently serving only one client
 clienta = projectclasses.client("a")
+clientb = projectclasses.client("b")
