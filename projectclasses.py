@@ -29,7 +29,8 @@ class order:
                 raise Exception("Order match Error")
         except Exception:
             print("%s is not a valid product" % ordertype)
-
+    def getAmount(self):        
+        return self.__amount
     def updateAmount(self, produced):
         self.__amount = self.__amount - produced
     def __str__(self):
