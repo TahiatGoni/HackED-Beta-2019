@@ -29,6 +29,8 @@ class order:
                 raise Exception("Order match Error")
         except Exception:
             print("%s is not a valid product" % ordertype)
+    def getOrderName(self):
+        return self.__prodType
     def getAmount(self):        
         return self.__amount
     def updateAmount(self, produced):
@@ -45,9 +47,11 @@ class client:
         self.__clientOrder = []
     def addOrder(self, ordername, amount):
         self.__clientOrder.append(order(amount, ordername))
-    def getOrders(self):
+    def showOrders(self):
         for element in self.__clientOrder:
             print(element)
+    def pullOrders(self, number):
+        return self.__clientOrder[number - 1]
     def __str__(self):
         string = "client: " + self.__client
         return string
