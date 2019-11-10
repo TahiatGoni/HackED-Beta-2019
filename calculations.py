@@ -1,7 +1,4 @@
-#have y days, hours = y * 8
-#have z workers, work time = yz * 8
-#1 unit of product production takes say x hours
-#l amount of units take = l * x hours
+#part of main submission
 #________________________________________________________
 import masterData as MD        
 import getDays as D
