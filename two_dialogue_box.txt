@@ -1,6 +1,8 @@
 import tkinter as tk
 def store_user_input():
-    store_user_input = e2.get()
+    user_input = e2.get()
+    return user_input
+
 def show_entry_fields():
     print("Client Name: %s\nOrder Name: %s\n"%(e1.get(), e2.get()))
 
@@ -30,9 +32,12 @@ tk.Button(master,
                                                        column=1,
                                                        sticky=tk.W,
                                                        pady=4)
-store_user_input = store_user_input + 1
+         
+
 
 
 tk.mainloop()
-
+UI = int(store_user_input())
+UI += 1
+print(UI)
 
