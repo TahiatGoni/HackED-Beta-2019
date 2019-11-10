@@ -16,14 +16,6 @@ def getOrder(client):
 
     startDate = input("Enter order Date (YYYY-MM-DD): ")
     endDate = input("Enter delivery Date (YYYY-MM-DD): ")
-    """
-    clientName = input("Enter client Name: ")
-    global client
-    if clientName == "a":
-        client = masterData.clienta
-    elif clientName == "b":
-        client = masterData.clientb
-    """
     productName = input("Enter order Name: ")
     if productName == "a":
         product = masterData.producta
