@@ -46,7 +46,7 @@ def createPlot(client, Number):
     productPlot.append(sum(dailyproduce))
     plt.plot(ratePlot, '--ro')
     plt.plot(productPlot, '--bo')
-    plt.title(str(client)+str(client.pullOrders(Number)))
+    plt.title(str(client)+" "+str(client.pullOrders(Number)))
     plt.xlabel("Days")
     plt.ylabel("Hours progressed")
     plt.legend(['ideal','actual'])

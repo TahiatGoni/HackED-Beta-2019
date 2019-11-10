@@ -8,10 +8,7 @@ def setClient():
         client = sh.masterData.clientb
     return client
 
-def switchToOrder(client):
-    client.showOrders()
-    Number = int(input("Enter order number from list shown above: "))
-    return Number
+
 if __name__ == '__main__':
     global client
     client = setClient()

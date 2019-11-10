@@ -56,6 +56,8 @@ class client:
         return len(self.__clientOrder)
     def pullOrders(self, number):
         return self.__clientOrder[number - 1]
+    def removeOrder(self, number):
+        self.__clientOrder.pop(number-1)
     def __str__(self):
         string = "client: " + self.__client
         return string
