@@ -13,7 +13,7 @@ class product:
     def getTime(self):
         return self.__time
     def __str__(self):
-        string = "Product: " + self.__name
+        string = "Product: " + str(self.__name)
         return string
 
 class order:
@@ -34,9 +34,9 @@ class order:
     def getAmount(self):        
         return self.__amount
     def updateAmount(self, produced):
-        self.__amount = self.__amount - produced
+        self.__amount = produced
     def __str__(self):
-        string = "Product: " + self.__prodType + "Order Amount: " + self.__amount
+        string = "Product: " + str(self.__prodType) + " Order Amount: " + str(self.__amount)
         return string
 class client:
     """
@@ -49,7 +49,7 @@ class client:
         self.__clientOrder.append(order(amount, ordername))
     def showOrders(self):
         for element in self.__clientOrder:
-            print(element)
+            print(str(element))
     def pullOrders(self, number):
         return self.__clientOrder[number - 1]
     def __str__(self):

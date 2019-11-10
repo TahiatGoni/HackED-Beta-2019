@@ -5,7 +5,7 @@ and all other data relevant to calculations that are being performed
 Can be accessed and tweaked by authorised personnel
 """
 import projectclasses
-WorkForce = 50
+workForce = 50
 
 #___________________________________________________________________________
 #producta, first product by company takes 3 hours to make per unit
