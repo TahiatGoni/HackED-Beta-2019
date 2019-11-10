@@ -19,5 +19,5 @@ if __name__ == '__main__':
     Number = switchToOrder(client)
     while amount>0:
         amount, days = sh.handleData(days, Number, client)
-        sh.createPlot()
+        sh.createPlot(client, Number)
     print("order complete")            

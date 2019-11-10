@@ -49,19 +49,18 @@ def handleData(totalDays, orderNumber, client):
     client.pullOrders(orderNumber).updateAmount(amount)
     return amount, totalDays
 
-def createPlot():
+def createPlot(client, Number):
     ratePlot.append(sum(rateList))
     productPlot.append(sum(dailyproduce))
     plt.plot(ratePlot, '--ro')
     plt.plot(productPlot, '--bo')
+    plt.title(str(client)+str(client.pullOrders(Number)))
+    plt.xlabel("Days")
+    plt.ylabel("Hours progressed")
+    plt.legend(['ideal','actual'])
     plt.draw()
     plt.pause(0.001)
 
 
-if __name__ == '__main__':
-    days, Number, amount = getOrder()
-    while amount>0:
-        amount, days = handleData(days, Number)
-        createPlot()
-    print("order complete")    
+
 
