@@ -1,3 +1,4 @@
+#used for trial and error and experimentation
 import calculations
 import getDays
 import masterData
