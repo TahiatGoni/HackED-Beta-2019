@@ -50,6 +50,8 @@ class client:
     def showOrders(self):
         for element in self.__clientOrder:
             print(str(element))
+    def getLen(self):
+        return len(self.__clientOrder)
     def pullOrders(self, number):
         return self.__clientOrder[number - 1]
     def __str__(self):
